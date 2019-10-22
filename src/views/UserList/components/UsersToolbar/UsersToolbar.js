@@ -24,7 +24,15 @@ const useStyles = makeStyles(theme => ({
   },
   searchInput: {
     marginRight: theme.spacing(1)
-  }
+  },
+  mailer:{
+    backgroundColor: '#03a9f5',
+    color: 'white',
+    '&:hover':{
+    backgroundColor: '#03a9f5',
+    color: 'white',
+    }
+  },
 }));
 
 const UsersToolbar = props => {
@@ -40,7 +48,7 @@ const UsersToolbar = props => {
       <div className={classes.row}>
         <span className={classes.spacer} />
         <Button
-          color="primary"
+          className={classes.mailer}
           variant="contained"
         >
           Send Mail

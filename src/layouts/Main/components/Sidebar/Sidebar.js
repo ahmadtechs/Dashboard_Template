@@ -6,8 +6,6 @@ import { Divider, Drawer } from '@material-ui/core';
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import PeopleIcon from '@material-ui/icons/People';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
-import ImageIcon from '@material-ui/icons/Image';
-import LockOpenIcon from '@material-ui/icons/LockOpen';
 
 import { Profile, SidebarNav } from './components';
 
@@ -30,7 +28,7 @@ const useStyles = makeStyles(theme => ({
     margin: theme.spacing(2, 0)
   },
   nav: {
-    marginBottom: theme.spacing(2)
+    marginBottom: theme.spacing(2),
   }
 }));
 

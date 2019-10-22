@@ -1,7 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Popover from '@material-ui/core/Popover';
-import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -15,6 +14,10 @@ const useStyles = makeStyles(theme => ({
   typography: {
     padding: theme.spacing(1),
   },
+  poper:{
+    backgroundColor: '#03a9f5',
+    color: 'white'
+  }
 }));
 
 export default function Cards() {
@@ -34,7 +37,7 @@ export default function Cards() {
 
   return (
     <div>
-      <Button aria-describedby={id} variant="contained" color="primary" onClick={handleClick}>
+      <Button aria-describedby={id} variant="contained" className={classes.poper} onClick={handleClick}>
         Open Popover
       </Button>
       <Popover

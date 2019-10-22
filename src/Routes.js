@@ -1,9 +1,11 @@
 import React from 'react';
-import { Switch, Redirect } from 'react-router-dom';
+import {Route, Switch, Redirect } from 'react-router-dom';
 
 import { RouteWithLayout } from './components';
 import { Main as MainLayout, } from './layouts';
 
+import SignIn from './views/SignIn/index'
+import EventsView from './views/Events/Event'
 import {
   Dashboard as DashboardView,
   UserList as UserListView,
@@ -13,6 +15,11 @@ import {
 const Routes = () => {
   return (
     <Switch>
+    <Route 
+    exact
+    path='/'
+    component={SignIn}
+    />
       <Redirect
         exact
         from="/"
@@ -29,6 +36,12 @@ const Routes = () => {
         exact
         layout={MainLayout}
         path="/team"
+      />
+      <RouteWithLayout
+        component={EventsView}
+        exact
+        layout={MainLayout}
+        path="/events"
       />
       <RouteWithLayout
         component={NotFoundView}

@@ -10,7 +10,8 @@ import InputIcon from '@material-ui/icons/Input';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    boxShadow: 'none'
+    boxShadow: 'none',
+    backgroundColor: '#03a9f5',
   },
   flexGrow: {
     flexGrow: 1
@@ -36,7 +37,7 @@ const Topbar = props => {
       className={clsx(classes.root, className)}
     >
       <Toolbar>
-        <RouterLink to="/">
+        <RouterLink to="/dashboard">
         <Typography className={classes.logo}>Empire Solution</Typography>
         </RouterLink>
         <div className={classes.flexGrow} />
@@ -52,6 +53,7 @@ const Topbar = props => {
           </IconButton>
           <IconButton
             className={classes.signOutButton}
+            onClick={handleClose => window.location('/')}
             color="inherit"
           >
             <InputIcon />

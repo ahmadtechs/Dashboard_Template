@@ -24,7 +24,7 @@ class GetStarted extends Component  {
           spacing={4}
           >
         <div>
-        <Typography className={classes.wlcm} color="primary">Welcome</Typography>
+        <Typography className={classes.wlcm}>Welcome</Typography>
         <Typography>we are the courageous next generation Tech</Typography>
         </div>
         <div className={classes.wlcmTabs}>

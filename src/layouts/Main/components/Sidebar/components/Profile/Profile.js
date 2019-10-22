@@ -3,7 +3,7 @@ import { Link as RouterLink } from 'react-router-dom';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
-import { Avatar, Typography } from '@material-ui/core';
+import { Avatar, Typography, Button } from '@material-ui/core';
 import user1 from '../../../../../../assets/images/logo.jpg'
 const useStyles = makeStyles(theme => ({
   root: {
@@ -18,6 +18,15 @@ const useStyles = makeStyles(theme => ({
   },
   name: {
     marginTop: theme.spacing(1)
+  },
+  updtProfile:{
+    marginTop: theme.spacing(2),
+   backgroundColor: '#03a9f5',
+   color: 'white',
+   '&:hover':{
+    backgroundColor: '#03a9f5',
+   color: 'white',
+   }
   }
 }));
 
@@ -45,6 +54,8 @@ const Profile = props => {
         Ahmad Hussein Habib
       </Typography>
       <Typography variant="body2">Software Developer</Typography>
+
+      <Button className={classes.updtProfile} variant="contained" fullWidth>Update Profile</Button>
     </div>
   );
 };

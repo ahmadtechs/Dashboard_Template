@@ -5,7 +5,8 @@ const styles = theme => ({
         fontSize: 38,
         fontFamily: 'roboto',
         padding: '10%',
-        marginRight: '10%'
+        marginRight: '10%',
+        color: '#03a9f5'
     },
     wlmWrapper:{
         alignItems: 'center',
@@ -14,7 +15,7 @@ const styles = theme => ({
     },
     wlcmTabs:{
         position: 'absolute',
-        paddingTop: '15%'
+        paddingTop: '15%',
     }
     
 })
